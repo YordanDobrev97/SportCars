@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1.5rem;
+}
+
+#logo {
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elements {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding: 50px;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    color: orangered;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.heading-1 {
+    color: white;
+    font-size: 4.5rem;
+    padding: 48px;
+}
+
+.description {
+    color: white;
+}
+
+.btn {
+    background-color: orangered;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    width: 15%;
+    margin: 20px auto;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: orangered;
+    background-color: white;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+}
+
+.fa-angles-down:hover {
+    transform: translateY(-10px);
+}
+
+.cars {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.featured-cars {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.cars article {
+    flex: 1 0 200px;
+    padding: 15px;
+}
+
+.cars img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.footer-icon {
+    width: 20%;
+}
+
+.footer-icon img {
+    width: 40%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.burger-btn {
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    .elements {
+        width: 60%;
+    }
+
+    .cars {
+        flex-direction: column;
+    }
+
+    .heading-1 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #logo {
+        padding: 0px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 80%;
+    }
+
+    .elements {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logo {
+        padding: 30px;
+        font-size: 2rem;
+    }
+
+    .heading-1 {
+        font-size: 4.5rem;
+        padding: 48px;
+    }
+
+    .navbar,
+    .elements,
+    .cars {
+        flex-direction: column;
+    }
+
+    .elements {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .burger-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        background: none;
+        color: white;
+        border: none;
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .footer-icon {
+        width: 75%;
+    }
+}
